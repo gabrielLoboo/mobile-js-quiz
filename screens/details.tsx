@@ -1,20 +1,9 @@
-import { RouteProp, useRoute } from '@react-navigation/native';
-import { ScreenContent } from 'components/ScreenContent';
-import { StyleSheet, View } from 'react-native';
-
-import { RootStackParamList } from '../navigation';
-
-type DetailsSreenRouteProp = RouteProp<RootStackParamList, 'Details'>;
+import { StyleSheet, View, Text } from 'react-native';
 
 export default function Details() {
-  const router = useRoute<DetailsSreenRouteProp>();
-
   return (
     <View style={styles.container}>
-      <ScreenContent
-        path="screens/details.tsx"
-        title={`Showing details for user ${router.params.name}`}
-      />
+      <Text>Ranking</Text>
     </View>
   );
 }
